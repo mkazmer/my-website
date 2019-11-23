@@ -23,6 +23,7 @@ menu,
 nav,
 section,
 summary {
+  max-height: 600px;
   display: block;
 }
 audio,
@@ -626,6 +627,7 @@ pre tt:after {
   }
 }
 
-main {
-  transform: skewY(-2deg);
+.main-container {
+  max-width: 800px;
+  margin: auto;
 }

@@ -22,12 +22,12 @@ const Header = () => (
           </li>
         </ul>
         <h1 className="name">MIKE KAZMER</h1>
-        <ul>
+        <ul className="details">
           <li>
-            <h2 className="details">FE Developer</h2>
+            <h2>FE Developer</h2>
           </li>
           <li>
-            <h2 className="details">Bass Player</h2>
+            <h2>Bass Player</h2>
           </li>
         </ul>
       </div>

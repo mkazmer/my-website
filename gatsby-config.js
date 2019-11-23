@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mike Kazmer`,
-    description: ``,
+    description: `My personal site!`,
     author: `@webbasser`,
   },
   plugins: [
@@ -28,14 +28,14 @@ module.exports = {
         icon: `src/images/webbasser.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-offline",
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: "gatsby-source-filesystem",
       options: {
-        plugins: ["gatsby-remark-embed-spotify"],
+        path: `${__dirname}/src/posts`,
+        name: "posts",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    "gatsby-transformer-remark",
   ],
 }
