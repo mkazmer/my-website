@@ -2,6 +2,9 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  a {
+    text-decoration: none;
+  }
 }
 body {
   margin: 0;
@@ -333,6 +336,7 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
+  display: flex;
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
@@ -343,6 +347,7 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
+  list-style-type: none;
 }
 ol {
   margin-left: 1.45rem;
@@ -619,4 +624,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+main {
+  transform: skewY(-2deg);
 }
