@@ -1,18 +1,50 @@
 import React from "react"
+import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
+import livePic from "../images/gallery/music2.jpg"
+import spotifyIcon from "../images/spotify-icon.png"
+
+const BAND_LIST_QUERY = graphql`
+  query BandList {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+            slug
+          }
+        }
+      }
+    }
+  }
+`
 
 const Music = () => (
-  <Layout>
-    <div>
-      <h1>
-        going to put band stuff here
-        <p>
-          https://open.spotify.com/album/3ICWz0kXRrh74cfcS0diek?si=AEK51ar4RI6zNduAVMmI-Q"
-        </p>
-      </h1>
-    </div>
-  </Layout>
+  <StaticQuery
+    query={BAND_LIST_QUERY}
+    render={data => (
+      <Layout>
+        <div className="Music">
+          <h1 className="music-header">going to put band stuff here</h1>
+          <img className="live-pic" src={livePic} alt="Live performace pic" />
+          <ul className="band-list">
+            {data.allMarkdownRemark.edges.map(m => {
+              return (
+                <li className="band" key={m.node.frontmatter.title}>
+                  <h3 className="band-name">{m.node.frontmatter.title}</h3>
+                  <p className="band-desc">{m.node.frontmatter.description}</p>
+                  <a className="spotify" href={m.node.frontmatter.slug}>
+                    <img src={spotifyIcon} alt="Spotify" />
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </Layout>
+    )}
+  />
 )
-
 export default Music

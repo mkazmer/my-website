@@ -23,7 +23,6 @@ menu,
 nav,
 section,
 summary {
-  max-height: 600px;
   display: block;
 }
 audio,
@@ -627,7 +626,16 @@ pre tt:after {
   }
 }
 
+header {
+  max-height: 600px;
+}
+
 .main-container {
-  max-width: 800px;
+  min-height: 100vh;
+  max-width: 1000px;
   margin: auto;
+
+  main {
+    margin: 0 20px;
+  }
 }

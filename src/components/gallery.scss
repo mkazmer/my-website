@@ -1,0 +1,23 @@
+.Gallery {
+  display: flex;
+  flex-direction: column;
+
+  .tile {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    .image {
+      justify-content: flex-start;
+      margin: auto;
+      height: 200px;
+
+      &:hover {
+        height: 300px;
+      }
+    }
+
+    p {
+      width: 50%;
+    }
+  }
+}

@@ -16,6 +16,12 @@
 
         img {
           height: 35px;
+          transition: all .4s ease;
+
+          &:hover {
+            transform: scale(1.4);
+          }
+
         }
       }
     }

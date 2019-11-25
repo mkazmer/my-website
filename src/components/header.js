@@ -11,18 +11,18 @@ const Header = () => (
       <img className="banner-img" src={bass} alt="Banner Img" />
       <div className="nav">
         <ul>
-          <li>
+          <li className="nav-link">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="nav-link">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="nav-link">
             <Link to="/music">Music</Link>
           </li>
         </ul>
         <h1 className="name">MIKE KAZMER</h1>
-        <ul className="details">
+        <ul className="roles">
           <li>
             <h2>FE Developer</h2>
           </li>
