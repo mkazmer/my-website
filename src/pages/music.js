@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import livePic from "../images/gallery/music2.jpg"
 import spotifyIcon from "../images/spotify-icon.png"
+import "./music.scss"
 
 const BAND_LIST_QUERY = graphql`
   query BandList {
@@ -33,11 +34,17 @@ const Music = () => (
             {data.allMarkdownRemark.edges.map(m => {
               return (
                 <li className="band" key={m.node.frontmatter.title}>
-                  <h3 className="band-name">{m.node.frontmatter.title}</h3>
+                  <div>
+                    <h3 className="band-name">{m.node.frontmatter.title}</h3>
+                    <a className="spotify" href={m.node.frontmatter.slug}>
+                      <img
+                        className="spotify-link"
+                        src={spotifyIcon}
+                        alt="Spotify"
+                      />
+                    </a>
+                  </div>
                   <p className="band-desc">{m.node.frontmatter.description}</p>
-                  <a className="spotify" href={m.node.frontmatter.slug}>
-                    <img src={spotifyIcon} alt="Spotify" />
-                  </a>
                 </li>
               )
             })}
