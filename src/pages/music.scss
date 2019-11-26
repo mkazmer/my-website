@@ -1,11 +1,15 @@
 .Music {
-
+  text-align: center;
   .page-container {
     display: flex;
     flex-direction: column;
 
     @media (max-width: 600px) {
       flex-direction: column-reverse;
+    }
+
+    .music-header {
+      
     }
 
     .live-pic {

@@ -28,7 +28,10 @@ const Music = () => (
     render={data => (
       <Layout>
         <div className="Music">
-          <h1 className="music-header">Some sort of header here</h1>
+          <h3 className="music-header">
+            I've been lucky enough to play in many bands over the years, but
+            here are a few of my favorites
+          </h3>
           <div className="page-container">
             <ul className="band-list">
               {data.allMarkdownRemark.edges.map(m => {
