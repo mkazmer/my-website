@@ -1,0 +1,30 @@
+.GalleryTile {
+  width: 300px;
+
+  button {
+    background: none;
+    border: none;
+  }
+
+  .info-icon {
+    z-index: 1;
+    position: relative;
+    float: right;
+    height: 30px;
+    top: 58px;
+    right: 2px;
+  }
+  .image {
+    margin: 0;
+    border-radius: 5px;
+    transition: box-shadow .2s ease-in-out;
+    border: solid rgba(214, 214, 214, 0.315) 2px;
+    
+    &:hover {
+      border: none;
+      box-shadow: 2px 2px 4px rgb(99, 99, 99);
+    }
+  }
+}
+
+

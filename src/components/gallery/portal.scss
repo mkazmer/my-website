@@ -1,0 +1,74 @@
+.Portal {
+  z-index: 1;
+  position: fixed;
+  top:0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .window-click{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 5px;
+    margin: 100px auto;
+    padding: 20px;
+
+    .close-button {
+      position: relative;
+      float: right;
+      background: none;
+      top: -20px;
+      right: -20px;
+      border: none;
+      height: 30px;
+      width: 30px;
+      transition: all .2s ease-in-out;
+
+      .close-x {
+        position: relative;
+        height: 3px;
+        width: 15px;
+        top: 3px;
+        left: -1px;
+        background-color: white;
+        transform: rotate(55deg);
+        transition: all .2s ease-in-out;
+      }
+
+      &:after {
+        content: " ";
+        position: absolute;
+        right: 9px;
+        height: 3px;
+        width: 15px;
+        background-color: white;
+        transform: rotate(-55deg);
+      }
+
+      &:hover {
+        transform: rotate(14deg);
+
+        .close-x {
+         transform: rotate(24deg);
+        }
+      }
+    }
+
+    .content-container {
+    }
+  }
+}

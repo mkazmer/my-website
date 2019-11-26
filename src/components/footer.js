@@ -1,8 +1,8 @@
 import React from "react"
 
-import linkedin from "../images/linkedin.png"
-import github from "../images/github.png"
-import twitter from "../images/twitter.png"
+import linkedin from "../images/icons/linkedin.png"
+import github from "../images/icons/github.png"
+import twitter from "../images/icons/twitter.png"
 import "./footer.scss"
 
 const Footer = () => {

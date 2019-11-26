@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import livePic from "../images/gallery/music2.jpg"
-import spotifyIcon from "../images/spotify-icon.png"
+import spotifyIcon from "../images/icons/spotify-icon.png"
 import "./music.scss"
 
 const BAND_LIST_QUERY = graphql`
