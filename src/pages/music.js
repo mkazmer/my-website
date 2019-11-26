@@ -28,7 +28,7 @@ const Music = () => (
     render={data => (
       <Layout>
         <div className="Music">
-          <h1 className="music-header"></h1>
+          <h1 className="music-header">Some sort of header here</h1>
           <div className="page-container">
             <ul className="band-list">
               {data.allMarkdownRemark.edges.map(m => {

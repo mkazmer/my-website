@@ -5,11 +5,10 @@
   .banner-img {
     display: flex;
     position: relative;
-    top: -60px;
     width: 100vw;
     min-height: 175px;
-    max-height: 500px;
-    transform: skewY(3deg);
+    max-height: 430px;
+    transform: skewY(2deg);
   }
 
   .nav {
@@ -77,7 +76,7 @@
 
 .avatar {
   position: relative;
-  top: -185px;
+  top: -130px;
   margin: auto;
   width: 200px;
 
