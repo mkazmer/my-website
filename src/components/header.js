@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import bass from "../images/bass.jpg"
 import avatar from "../images/avatar.jpg"
-import "./Header.scss"
+import "./header.scss"
 
 const Header = () => (
   <header>
