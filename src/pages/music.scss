@@ -2,7 +2,30 @@
   .live-pic {
     max-width: 600px;
   }
-  .spotify-link {
-    height: 40px;
+  .band-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .band-container {
+      width: 220px;
+      background-color: rgb(238, 238, 238);
+      border-radius: 5px;
+      padding: 10px;
+
+      .band-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .spotify-link {
+          width: 30px;
+          margin: 10px;
+
+          &:hover {
+            transform: scale(1.1)
+          }
+        }
+      }
+    }
   }
 }

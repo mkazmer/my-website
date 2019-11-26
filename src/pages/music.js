@@ -33,8 +33,8 @@ const Music = () => (
           <ul className="band-list">
             {data.allMarkdownRemark.edges.map(m => {
               return (
-                <li className="band" key={m.node.frontmatter.title}>
-                  <div>
+                <li className="band-container" key={m.node.frontmatter.title}>
+                  <div className="band-header">
                     <h3 className="band-name">{m.node.frontmatter.title}</h3>
                     <a className="spotify" href={m.node.frontmatter.slug}>
                       <img
