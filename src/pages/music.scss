@@ -2,6 +2,7 @@
   .live-pic {
     max-width: 600px;
   }
+
   .band-list {
     display: flex;
     flex-wrap: wrap;
@@ -11,12 +12,13 @@
       width: 220px;
       background-color: rgb(238, 238, 238);
       border-radius: 5px;
-      padding: 10px;
+      padding: 15px;
 
       .band-header {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+
         .spotify-link {
           width: 30px;
           margin: 10px;
