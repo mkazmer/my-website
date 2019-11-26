@@ -28,27 +28,34 @@ const Music = () => (
     render={data => (
       <Layout>
         <div className="Music">
-          <h1 className="music-header">going to put band stuff here</h1>
-          <img className="live-pic" src={livePic} alt="Live performace pic" />
-          <ul className="band-list">
-            {data.allMarkdownRemark.edges.map(m => {
-              return (
-                <li className="band-container" key={m.node.frontmatter.title}>
-                  <div className="band-header">
-                    <h3 className="band-name">{m.node.frontmatter.title}</h3>
-                    <a className="spotify" href={m.node.frontmatter.slug}>
-                      <img
-                        className="spotify-link"
-                        src={spotifyIcon}
-                        alt="Spotify"
-                      />
-                    </a>
-                  </div>
-                  <p className="band-desc">{m.node.frontmatter.description}</p>
-                </li>
-              )
-            })}
-          </ul>
+          <h1 className="music-header"></h1>
+          <div className="page-container">
+            <ul className="band-list">
+              {data.allMarkdownRemark.edges.map(m => {
+                return (
+                  <li className="band-container" key={m.node.frontmatter.title}>
+                    <div className="band-header">
+                      <h3 className="band-name">{m.node.frontmatter.title}</h3>
+                      <a
+                        className="spotify-container"
+                        href={m.node.frontmatter.slug}
+                      >
+                        <img
+                          className="spotify-link"
+                          src={spotifyIcon}
+                          alt="Spotify"
+                        />
+                      </a>
+                    </div>
+                    <p className="band-desc">
+                      {m.node.frontmatter.description}
+                    </p>
+                  </li>
+                )
+              })}
+            </ul>
+            <img className="live-pic" src={livePic} alt="Live performace pic" />
+          </div>
         </div>
       </Layout>
     )}

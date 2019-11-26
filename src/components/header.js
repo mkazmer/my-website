@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import bass from "../images/bass.jpg"
+import bass from "../images/bass_banner.png"
 import avatar from "../images/avatar.jpg"
 import "./header.scss"
 

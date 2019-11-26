@@ -1,30 +1,56 @@
 .Music {
-  .live-pic {
-    max-width: 600px;
-  }
 
-  .band-list {
+  .page-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 
-    .band-container {
-      width: 220px;
-      background-color: rgb(238, 238, 238);
-      border-radius: 5px;
-      padding: 15px;
+    .live-pic {
+      margin: 30px auto 0 auto;
+      max-width: 450px;
+      transform: skewY(-3deg);
 
-      .band-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+      @media (max-width: 600px) {
+        max-width: 80%;
+      }
+    }
 
-        .spotify-link {
-          width: 30px;
-          margin: 10px;
+    .band-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
 
-          &:hover {
-            transform: scale(1.1)
+      .band-container {
+        margin: 0 10px 10px 0;
+        max-width: 230px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 4px;
+        padding: 10px;
+
+        @media (max-width: 600px) {
+          margin-right: 0;
+          max-width: 80%;
+        }
+
+        .band-header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          min-height: 80px;
+          margin: 0 0 5px 0;
+          border-bottom: solid rgb(207, 207, 207) 1px;
+
+          .band-name {
+            max-width: 180px;
+          }
+
+          .spotify-container {
+            width: 30px;
+        
+            .spotify-link {
+              &:hover {
+                transform: scale(1.2)
+              }
+            }
           }
         }
       }

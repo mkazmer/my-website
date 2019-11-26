@@ -627,7 +627,11 @@ pre tt:after {
 }
 
 header {
-  max-height: 600px;
+  max-height: 550px;
+
+  @media (max-width: 980px) {
+    max-height: 425px;
+  }
 }
 
 .main-container {

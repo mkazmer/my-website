@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-wrap">
         <ul>
           <li className="footer-link">
-            <a href="https://www.linkedin.com/in/michael-kazmer-517967118/">
+            <a href="https://www.linkedin.com/in/mike-kazmer-517967118/">
               <img src={linkedin} alt="LinkedIn" />
             </a>
           </li>

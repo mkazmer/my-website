@@ -6,7 +6,7 @@
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
 
-  .window-click{
+  .window-close{
     position: absolute;
     top: 0;
     z-index: 0;
@@ -26,49 +26,30 @@
     border-radius: 5px;
     margin: 100px auto;
     padding: 20px;
+  }
 
-    .close-button {
-      position: relative;
-      float: right;
-      background: none;
-      top: -20px;
-      right: -20px;
-      border: none;
-      height: 30px;
+  &:hover{
+    .close-x {
+      position: fixed;
+      top: 35px;
+      right: 25px;
       width: 30px;
-      transition: all .2s ease-in-out;
+      height: 5px;
+      border-radius: 4px;
+      transition: all .4s ease-in;
+      transform: rotate(50deg);
+      background-color: rgb(190, 190, 190);
 
-      .close-x {
-        position: relative;
-        height: 3px;
-        width: 15px;
-        top: 3px;
-        left: -1px;
-        background-color: white;
-        transform: rotate(55deg);
-        transition: all .2s ease-in-out;
-      }
-
-      &:after {
-        content: " ";
+      &::after {
+        content: '';
         position: absolute;
-        right: 9px;
-        height: 3px;
-        width: 15px;
-        background-color: white;
-        transform: rotate(-55deg);
+        width: 30px;
+        height: 5px;
+        right: 0px;
+        border-radius: 4px;
+        transform: rotate(80deg);
+        background-color: rgb(190, 190, 190);
       }
-
-      &:hover {
-        transform: rotate(14deg);
-
-        .close-x {
-         transform: rotate(24deg);
-        }
-      }
-    }
-
-    .content-container {
     }
   }
 }
