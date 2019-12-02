@@ -1,6 +1,5 @@
 import React from "react"
 
-import InfoIcon from "../../images/icons/info-icon.png"
 import "./galleryTile.scss"
 
 const GalleryTile = ({ image, toggle, toSelect, setSelected }) => {
@@ -13,7 +12,6 @@ const GalleryTile = ({ image, toggle, toSelect, setSelected }) => {
           setSelected(toSelect)
         }}
       >
-        <img className="info-icon" src={InfoIcon} alt="Info icon" />
         <img className="image" src={image} alt={`${image}`} />
       </button>
     </div>

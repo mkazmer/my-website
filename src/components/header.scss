@@ -110,8 +110,10 @@
           border: none;
 
           .hamburger-div {
+            position: relative;
             height: 3px;
             width: 30px;
+            bottom: 10px;
             background-color: white;
 
             &:before, &:after {
@@ -119,18 +121,18 @@
               position: absolute;
               height: 3px;
               background-color: white;
-              right: 5px;
+              right: 0px;
               transition: all .3s ease;
             }
 
             &:before {
               width: 22px;
-              bottom: 9px;
+              top: 9px;
              }
 
             &:after {
               width: 14px;
-              bottom: 0px;
+              top: 18px;
             }
           }
 
