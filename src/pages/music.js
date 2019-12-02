@@ -29,8 +29,8 @@ const Music = () => (
       <Layout>
         <div className="Music">
           <h3 className="music-header">
-            I've been lucky enough to play in many bands over the years, but
-            here are a few of my favorites
+            I've been lucky enough to play in many bands over the years, and
+            here are a few of my favorites.
           </h3>
           <div className="page-container">
             <ul className="band-list">

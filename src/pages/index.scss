@@ -1,4 +1,4 @@
-
+.Home {
   .home-container {
     display: flex;
     flex-direction: column;
@@ -6,7 +6,16 @@
 
     .home-text {
       max-width: 400px;
-      text-align: justify
+      text-align: justify;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      padding: 25px;
     }
   }
 
@@ -22,3 +31,4 @@
   .text-container-3 {
     justify-content: flex-end;
   }
+}
