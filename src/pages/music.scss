@@ -50,12 +50,15 @@
 
           .band-name {
             max-width: 180px;
+            text-align: left;
           }
 
           .spotify-container {
             width: 30px;
-        
+            
+
             .spotify-link {
+              transition: all 0.2s ease-in-out;
               &:hover {
                 transform: scale(1.2)
               }

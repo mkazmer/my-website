@@ -17,7 +17,7 @@ const Portal = ({ selected, open, toggle }) => {
     return createPortal(
       <div className="Portal">
         <button className="window-close" onClick={() => toggle(false)}>
-          <div className="close-x"></div>
+          <div className="close-x" />
         </button>
         <div className="container">
           <p>{portalText[selected]}</p>
