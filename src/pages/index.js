@@ -3,36 +3,31 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./index.scss"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi, I'm Mike!</h1>
-    <p>Stuff about me....</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-      necessitatibus, aperiam consectetur aspernatur exercitationem aliquid
-      neque voluptatem fuga enim nisi quaerat cumque ad unde provident, autem
-      non. Quod, alias consequatur!
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus neque
-      quam quidem cupiditate voluptate, ducimus itaque tempore architecto eius.
-      Et laudantium modi expedita fuga, voluptates consequuntur sunt quos
-      facilis ullam?
-    </p>
-    <p>Now go build something great.</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-      necessitatibus, aperiam consectetur aspernatur exercitationem aliquid
-      neque voluptatem fuga enim nisi quaerat cumque ad unde provident, autem
-      non. Quod, alias consequatur!
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus neque
-      quam quidem cupiditate voluptate, ducimus itaque tempore architecto eius.
-      Et laudantium modi expedita fuga, voluptates consequuntur sunt quos
-      facilis ullam?
-    </p>
+    <div className="home-container">
+      <div className="text-container-1">
+        <p className="home-text">
+          As a skilled problem solver and lifelong learner, I'm excited by new
+          challenges. With my extensive background in both technical and
+          creative fields, I bring both an analytical and creative mindset to
+          all I do.
+        </p>
+      </div>
+      <div className="text-container-2">
+        <p className="home-text">
+          As a musician, I live and breathe the creative process, enjoy
+          collaborating, and love building something from the ground up.
+        </p>
+      </div>
+      <div className="text-container-3">
+        <p className="home-text">Lets build something great together.</p>
+      </div>
+    </div>
   </Layout>
 )
 
