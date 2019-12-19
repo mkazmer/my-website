@@ -59,6 +59,7 @@
           }
 
           @media (max-width: 600px) {
+            font-size: 24px;
             text-shadow: -1px 1px 1px rgb(107, 107, 107);
         }
       }
@@ -208,6 +209,7 @@
           height: 100vh;
           background-color: rgb(150, 150, 150);
           box-shadow: -1px 1px 5px rgb(99, 99, 99);
+          border-radius: 0 0 0 6px;
           top: 41px;
           right: 0;
           transition: all .3s ease-in;
